@@ -1,0 +1,102 @@
+.plate {
+    position: relative;
+    padding-bottom: 50%;
+
+    background-color: #f3f5f7;
+    background-position: center center; /* x y */
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include mobile {
+        padding-bottom: 55%;
+    }
+
+    &--01 {
+        background-image: url('./../img/collection/01.jpg');
+        @include mediaBg() {
+            background-image: url('./../img/collection/01@2x.jpg');
+        }
+    }
+    
+    &--02 {
+        background-image: url('./../img/collection/02.jpg');
+        @include mediaBg() {
+            background-image: url('./../img/collection/02@2x.jpg');
+        }
+    }
+    &--03 {
+        background-image: url('./../img/collection/03.jpg');
+        @include mediaBg() {
+            background-image: url('./../img/collection/03@2x.jpg');
+        }
+    }
+}
+
+.plate__content {
+    position: absolute;
+    bottom: 40px;
+    left: 32px;
+    right: 32px;
+
+    @include tablet {
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+    }
+}
+
+.plate--tall {
+    grid-row:  1 / span 2;
+
+    & .plate__content {
+        position: absolute;
+        bottom: 48px;
+        left: 48px;
+        right: 48px;
+
+        @include tablet {
+            bottom: 32px;
+            left: 32px;
+            right: 32px;
+        }
+    }
+}
+
+.plate__title {
+    margin-bottom: 12px;
+    font-family: var(--font-accent);
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 112%;
+    letter-spacing: -0.02em;
+    color: var(--text-alter);
+
+    @include tablet {
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+}
+
+.plate__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: -0.03em;
+    color: var(--text-alter);
+
+    border-bottom: 1px solid var(--text-alter);
+    transition: all 0.2s ease-in;
+
+    @include tablet {
+        font-size: 14px;
+    }
+    
+    &:hover {
+        gap: 6px;
+    }
+}

@@ -1,0 +1,13 @@
+.swiper {
+//   width: 100%;
+//   height: 100%;
+}
+
+.swiper-slide {
+    width: 262px !important;
+
+    @include mobile {
+        width: 231px !important;
+    }
+}
+

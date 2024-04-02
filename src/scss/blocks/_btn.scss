@@ -1,0 +1,79 @@
+.btn {
+    display: inline-block;
+    padding: 12px 56px;
+    border-radius: 8px;
+    background: var(--nav-color);
+
+    font-family: var(--font-main);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.78;
+    letter-spacing: -0.02em;
+    text-align: center;
+
+    color: #fff;
+
+    transition: all 0.2s ease-in;
+
+    @include mobile {
+        font-size: 14px;
+        line-height: 1.71;
+    }
+
+    &--small {
+        padding: 8px 40px;
+
+        font-size: 16px;
+        line-height: 1.75;
+        letter-spacing: -0.03em;
+        color: #fefefe;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.04);
+
+        @include mobile {
+            padding: 6px 40px;
+            font-size: 14px;
+            line-height: 1.71;
+        }
+    }
+
+    &--wide {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+    }
+
+    &--mob {
+        border-radius: 6px;
+        padding: 10px 26px;
+    }
+
+    &:hover  {
+        opacity: 0.9;
+        transform: scale(0.97);
+    }
+}
+
+.btn-fav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    padding: 6px;
+    width: 32px;
+    height: 32px;
+
+    box-shadow: 0 8px 16px -8px rgba(15, 15, 15, 0.5);
+    background: var(--page-bg);
+
+    transition: all 0.3s ease-in;
+    
+    &:hover {
+        background-color: #cc2e2e;
+
+        .icon-heart-fav {
+            cursor: pointer;
+            fill: #fff;
+        }
+    }
+}

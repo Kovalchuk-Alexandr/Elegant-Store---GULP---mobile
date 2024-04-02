@@ -1,0 +1,42 @@
+.arrivals {
+    padding: 48px 0;
+
+    @include mobile {
+        padding: 32px 0;
+    }
+}
+
+.arrivals__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 48px;
+
+    @include mobile {
+        // flex-direction: column;
+        flex-wrap: wrap;
+        gap: 22px;
+        margin-bottom: 40px;
+    }
+}
+
+.arrivals__title {
+    display: inline-block;
+    
+}
+
+.arrivals__dots {
+    @include mobile {
+        margin: 0 auto;
+    }
+
+    @media (max-width: 460px) {
+        display: none;
+    }
+}
+
+.arrivals__slider {
+    display: flex;
+    gap: 24px;
+}

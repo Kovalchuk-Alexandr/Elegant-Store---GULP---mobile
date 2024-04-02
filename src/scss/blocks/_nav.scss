@@ -1,0 +1,89 @@
+.header__nav {
+}
+.nav {
+	padding: 16px 0;
+	background-color: #ffc95c;
+}
+
+.nav__row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.nav__logo {
+	display: flex;
+	gap: 4px;
+}
+
+.nav__btn-mobile {
+	display: none;
+
+	@include mobile {
+		display: block;
+	}
+}
+
+.nav__list {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+
+	@include mobile {
+		display: none;
+	}
+}
+
+.nav__item {
+	
+
+}
+
+.nav__link {
+	font-family: var(--font-nav);
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.71;
+	color:  var(--nav-color);
+
+	display: flex;
+	gap: 2px;
+	align-items: center;
+}
+
+.nav__btns {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+.nav__btn {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.nav__btn-count {
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background-color: var(--nav-color);
+
+	font-family: var(--font-main);
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 20px ;
+	text-align: center;
+	color: var(--yellow);
+
+	&--mob {
+		color: var(--page-bg);
+	}
+}
+
+@include mobile {
+	.nav__btn-search, .nav__btn-user {
+		display: none;
+	}
+}

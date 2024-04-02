@@ -1,0 +1,43 @@
+:root {
+	--container-width: 1184px;
+	--container-padding: 32px;
+
+	--font-main: 'Inter', sans-serif;
+	--font-accent: 'Poppins', sans-serif;
+	--font-nav: 'SpaceGrotesk', sans-serif;
+	--font-titles: var(--font-accent);
+
+	--page-bg: #fff;
+	--timer-bg: #fefefe;
+	--fill: #fefefe;
+	--fill-mob: var(--nav-color);
+	--text-color: #000;
+	--text-alter: #121212;
+	--text-second: #343839;
+	--nav-color:  #141718;
+	--accent: #ac182c;
+	--link-color: #2578c8;
+
+	--gray: #6c7275;
+	--yellow: #ffab00;
+	--blue: #377dff;
+	
+	--tagline-link: var(--yellow);
+
+
+    --laptop-size: 1199px;
+	--tablet-size: 959px;
+	--mobile-size: 599px;
+}
+
+.dark {
+    --page-bg: #252526;
+    --text-color: #fff;
+}
+
+/* BG для retina */
+@mixin mediaBG() {
+    @media (-webkit-min-device-pixel-ratio:2), (min-resolution:192dpi) {
+        @content;
+    }
+}

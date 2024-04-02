@@ -1,0 +1,121 @@
+.newsletter {
+    height: 360px;
+    padding-top: 101px;
+    display: flex;
+    justify-content: center;
+
+    background-color: #e2e4e3;
+    background-image: url('./../img/newsletter/bg-nl.jpg');
+    background-position: center center; /* x y */
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include mediaBg() {
+        background-image: url('./../img/newsletter/bg-nl@2x.jpg');
+    }
+
+    @include tablet {
+        background-color: #f2f4f6;
+        // background-image: none;
+    }
+
+    @include mobile {
+        height: auto;
+        padding: 95px  0;
+        background-image: none;
+    }
+}
+
+.newsletter__content {
+    // margin: 101px auto 93px auto;
+    flex-grow: 1;
+    max-width: 552px;
+    // padding: 0 var(--container-padding);
+    text-align: center;
+
+
+}
+
+.newsletter__heading {
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // gap: 8px;
+
+    // @include mobile {
+    //     max-width: 311px;
+    // }
+}
+
+.newsletter__title {
+    margin-bottom: 8px;
+    @include mobile {
+        font-size: 28px;
+        line-height: 1.21;
+        letter-spacing: -0.02em;
+        text-align: center;
+        color: var(--text-alter);
+    }
+}
+
+.newsletter__desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    text-align: center;
+    color: var(--text-alter);
+    margin-bottom: 32px;
+
+    @include mobile {
+        font-size: 14px;
+        line-height: 1.57;
+        text-align: center;
+    }
+}
+
+.form-newsletter {
+    padding-bottom: 12px;
+    // height: 52px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid  rgba(108, 114, 117, 0.5);
+}
+
+.form__icon {
+    // flex-grow: 1;
+    width: 24px;
+    height: 24px;
+}
+
+.form-newsletter__input {
+    flex: 1;
+    color: var(--text-alter);
+
+    @include mobile {
+        width: 170px;
+    }
+
+    &::placeholder {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.75;
+        letter-spacing: -0.03em;
+        color: #6c7275;
+    }
+}
+
+.form-newsletter__submit {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: -0.03em;
+    color: #6c7275;
+
+    transition: all 0.2s ease-in;
+    
+
+    &:hover {
+        color: var(--text-alter);
+    }
+}

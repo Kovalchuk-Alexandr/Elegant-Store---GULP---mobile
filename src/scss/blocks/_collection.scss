@@ -1,0 +1,31 @@
+.collection {
+    padding: 48px 0 0;
+
+    @include mobile {
+        padding: 40px 0;
+    }
+    
+}
+
+.collection__title {
+    padding-bottom: 16px;
+
+    @include mobile {
+        padding: 40px 0 16px;
+        text-align: center;
+    }
+}
+
+.collection__grid {
+    height: 664px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+
+    @include mobile {
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(180px, 1fr);
+        gap: 16px;
+    }
+}
