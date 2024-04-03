@@ -1,11 +1,13 @@
-# Gulp сборка для верстки сайтов от [ВебКадеми](https://webcademy.ru)
+# Elegant Store - GULP - mobile
+
+## Cайт интернет магазина. Главная страница с каталогом товаров. Верстка на Gulp сборке. HTML, SCSS, JS, Swiper slider. Мобильная адаптация.
 
 - HTML,
 - SCSS,
 - Gulp,
-- JS
-
-Документация и примеры использования внутри.
+- JS,
+- Swiper slider
+- Мобильная адаптация
 
 Установить зависимости:
 ```
@@ -22,4 +24,4 @@ gulp
 gulp docs
 ```
 
-[Смотреть демо](https://user.github.io/repo/)
+[Смотреть демо](https://kovalchuk-alexandr.github.io/Elegant-Store---GULP---mobile/)
